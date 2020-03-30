@@ -1,0 +1,1 @@
+<img src="kyanit_api_logo.svg">

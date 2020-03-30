@@ -15,8 +15,6 @@
 
 Kyanit API is a Python API for interfacing and interacting with Kyanit.
 
-For Kyanit's central documentation head to: https://kyanit.eu/docs
-
 For a command-line utility, see Kyanit CTL at https://kyanit.eu/docs/kyanit-ctl.
 
 Install the latest released version of Kyanit API from PyPI with:
@@ -105,7 +103,7 @@ b'some text'
 See the `Kyanit` class and module function documentations to see what the class and this module can
 do.
 
-## License Notice
+# License Notice
 
 Copyright (C) 2020 Zsolt Nagy
 
