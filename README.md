@@ -28,7 +28,7 @@ This repo. Python API for interaction with Kyanit from Python code. (It is used 
 
 ## Installing Kyanit API
 
-Install the latest released verion with:
+Install the latest released version with:
 
 ```
 pip install kyanitapi
