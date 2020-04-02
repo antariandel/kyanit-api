@@ -126,8 +126,11 @@ import pythonping
 
 from functools import wraps
 
+try:
+    from ._version import __version__
+except ImportError:
+    pass
 
-__version__ = '1.0.0'
 
 VALID_ID_COLORS = ['B', 'C', 'G', 'M', 'R', 'W', 'Y']
 
