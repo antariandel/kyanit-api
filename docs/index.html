@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.7.5" />
 <title>Kyanit API Documentation</title>
-<meta name="description" content="Kyanit API â€¦" />
+<meta name="description" content="Kyanit API …" />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
@@ -232,8 +232,11 @@ import pythonping
 
 from functools import wraps
 
+try:
+    from ._version import __version__
+except ImportError:
+    pass
 
-__version__ = &#39;1.0.0&#39;
 
 VALID_ID_COLORS = [&#39;B&#39;, &#39;C&#39;, &#39;G&#39;, &#39;M&#39;, &#39;R&#39;, &#39;W&#39;, &#39;Y&#39;]
 
