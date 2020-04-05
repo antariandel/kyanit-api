@@ -17,8 +17,11 @@ def describe_head():
     `Exception('working tree broken')` is raised if the working tree is broken.
     """
 
-    git_describe = subprocess.check_output(
-        'git describe --tags --match "v*" --dirty --broken').decode().strip()[1:]
+    try:
+        git_describe = subprocess.check_output(
+            'git describe --tags --match "v*" --dirty --broken').decode().strip()[1:]
+    except subprocess.CalledProcessError:
+        return '0.1.0.dev0'
     if '-broken' in git_describe:
         raise Exception('working tree broken')
     match = re.match(r'([0-9]+\.[0-9]+\.[0-9]+)(\-([0-9+]))?', git_describe)
@@ -49,8 +52,9 @@ setuptools.setup(
     url='https://github.com/kyanit-project/kyanitapi',
     packages=setuptools.find_packages(),
     install_requires=[
-        'psutil',
-        'pythonping'
+        'psutil>=5,<6',
+        'pythonping>=1,<2',
+        'requests>=2,<3',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -58,5 +62,6 @@ setuptools.setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
     ],
+    license='GPLv3',
     python_requires='>=3.6',
 )
