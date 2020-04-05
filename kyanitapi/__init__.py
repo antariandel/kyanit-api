@@ -127,7 +127,7 @@ import pythonping
 from functools import wraps
 
 try:
-    from ._version import __version__
+    from ._version import __version__  # noqa
 except ImportError:
     pass
 
