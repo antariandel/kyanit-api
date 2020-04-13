@@ -1,0 +1,8 @@
+semver>=2,<3
+pdoc3>=0,<1
+pre-commit>=2,<3
+wheel>=0,<1
+
+psutil>=5,<6
+pythonping>=1,<2
+requests>=2,<3
