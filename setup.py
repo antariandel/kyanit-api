@@ -60,6 +60,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kyanit-project/kyanitapi",
     packages=setuptools.find_packages(),
+    # confirmed following dependencies:
     install_requires=["psutil>=5,<6", "pythonping>=1,<2", "requests>=2,<3"],
     classifiers=[
         "Programming Language :: Python :: 3",
