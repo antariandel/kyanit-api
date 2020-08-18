@@ -17,7 +17,8 @@
 
 Kyanit API is a Python API for interfacing and interacting with Kyanit.
 
-For a command-line utility, see Kyanit CTL at https://kyanit.eu/docs/kyanit-ctl.
+For a command-line utility, see Kyanit CTL at
+https://kyanit-project.github.io/kyanit-ctl/kyanitctl/.
 
 Install the latest released version of Kyanit API from PyPI with:
 
@@ -42,7 +43,7 @@ Kyanit provides an addressing mechanism called the "Color ID," which mapps to th
 address of the Kyanit board. The Color ID consists of 3 colors from the **R**ed,
 **G**reen, **B**lue, **C**yan, **M**agenta, **Y**ellow and **W**hite pallette. If you
 don't know how to find out the Color ID of a Kyanit board, head to Kyanit's
-documentation at: https://kyanit.eu/docs/kyanit
+documentation at: https://kyanit-project.github.io/kyanit/kyanit/
 
 Addressing using the Color ID works on home networks with a subnet mask of
 255.255.255.0, which is what most home and small business routers create. Assuming you
@@ -457,7 +458,7 @@ class Kyanit:
         ```
 
         Note: for possible run states see
-        https://github.com/kyanit-project/kyanit#run-states
+        https://kyanit-project.github.io/kyanit/kyanit/#run-states
         """
 
         num_tries = 0
@@ -671,7 +672,8 @@ class Kyanit:
         Kyanit.netvar(clear=True)
         ```
 
-        See https://github.com/kyanit-project/kyanit#the-netvar for more on Netvar.
+        See https://kyanit-project.github.io/kyanit/kyanit/#kyanit-netvar for more on
+        Netvar.
         """
 
         if clear:
